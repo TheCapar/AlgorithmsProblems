@@ -1,0 +1,23 @@
+Console.WriteLine(" N Pozitif Sayısını Giriniz:");
+int?  n = int.Parse(Console.ReadLine());
+Console.WriteLine("M Pozitif Sayısını Giriniz:");
+int?  m = int.Parse(Console.ReadLine());
+
+List<int> nums = new List<int>();
+if(n>0 && m>0){
+    for(int i=0; i<n;i++){
+        Console.WriteLine( "Sayı Giriniz");
+        int b = int.Parse(Console.ReadLine());
+        if(b % m == 0){
+            nums.Add(b);
+        } 
+    }
+    foreach(var c in nums){
+        Console.WriteLine("Ekrana Yazdırılan Değerler:");
+        Console.WriteLine(c);
+    }
+}
+else{
+    Console.WriteLine("Pozitif Bir Sayı Girmediniz!!!");
+    Console.WriteLine("Lütfen Programı Tekrardan Başlatınız");
+}
