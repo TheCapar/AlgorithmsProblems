@@ -1,0 +1,7 @@
+Console.WriteLine("Cümle Giriniz:");
+string n = Console.ReadLine();
+
+string[] kelimeler=n.Split(' ');
+
+Console.WriteLine("Kullanılan Kelime Sayisi:{0}",kelimeler.Count());
+Console.WriteLine("Kullanılan Harf Sayisi: {0}",n.Count());
