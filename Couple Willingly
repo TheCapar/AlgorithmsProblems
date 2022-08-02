@@ -1,0 +1,20 @@
+Console.WriteLine("Pozitif Bir Değer Giriniz:");
+int? a = int.Parse(Console.ReadLine());
+
+List<int> nums = new List<int>();
+if(a>0){
+    for(int i=0; i<a;i++){
+        Console.WriteLine( "Sayı Giriniz");
+        int b = int.Parse(Console.ReadLine());
+        if(b % 2 == 0){
+            nums.Add(b);
+        } 
+    }
+    foreach(var c in nums){
+        Console.WriteLine(c);
+    }
+}
+else{
+    Console.WriteLine("Pozitif Bir Sayı Girmediniz!!!");
+    Console.WriteLine("Lütfen Programı Tekrardan Başlatınız");
+}
